@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cài đặt ứng dụng</title>
+<title>Cài đặt SpeedMaint</title>
 <style>
-  :root { --bg:#0d1117; --card:#161b22; --fg:#e6edf3; --muted:#8b949e; --border:#30363d; }
+  :root { --bg:#0d1117; --card:#161b22; --fg:#e6edf3; --muted:#8b949e; --accent:#238636; --accent2:#2ea043; --border:#30363d; }
   * { box-sizing:border-box; }
   body { margin:0; min-height:100vh; background:var(--bg); color:var(--fg);
          font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
@@ -18,11 +18,10 @@
   h1 { font-size:22px; margin:8px 0 2px; }
   .ver { color:var(--muted); font-size:14px; margin-bottom:22px; }
   .btn { display:block; width:100%; padding:15px; border-radius:12px; border:none;
-         color:#fff; font-size:16px; font-weight:600; text-decoration:none; margin-bottom:10px; }
-  .b1 { background:#1f6feb; } .b1:active { background:#388bfd; }
-  .b2 { background:#238636; } .b2:active { background:#2ea043; }
-  .lbl { font-size:12px; color:var(--muted); margin:2px 0 12px; }
-  .note { color:var(--muted); font-size:13px; line-height:1.6; text-align:left; margin-top:12px;
+         background:var(--accent); color:#fff; font-size:17px; font-weight:600;
+         text-decoration:none; margin-bottom:14px; }
+  .btn:active { background:var(--accent2); }
+  .note { color:var(--muted); font-size:13px; line-height:1.6; text-align:left;
           background:#0d1117; border:1px solid var(--border); border-radius:10px; padding:14px; }
   .note b { color:var(--fg); }
 </style>
@@ -32,20 +31,14 @@
     <div class="icon">🛠️</div>
     <h1>SpeedMaint</h1>
     <div class="ver">Phiên bản 1.0.13</div>
-
-    <a class="btn b2" href="itms-services://?action=download-manifest&url=https://diendv.github.io/ins_ct_spm/speedmaint/SpeedMaint.plist">
-      ✅ Cài (bản Pages - đã chạy)
+    <a class="btn" href="itms-services://?action=download-manifest&url=https://diendv.github.io/ins_ct_spm/SpeedMaint.plist">
+      📲 Cài đặt SpeedMaint
     </a>
-    <div class="lbl">Cách cũ, đã xác nhận cài được</div>
-
-    <a class="btn b1" href="itms-services://?action=download-manifest&url=https://diendv.github.io/ins_ct_spm/SpeedMaint_rel.plist">
-      🧪 Cài (bản Releases - đang TEST)
-    </a>
-    <div class="lbl">Cách mới qua Releases, cần bạn test nút này</div>
-
     <div class="note">
-      <b>Cách test:</b><br>
-      Mở trang này bằng <b>Safari</b>, bấm nút <b>🧪 Releases</b>. Nếu hiện hộp thoại "Cài đặt" và tải về được → Releases chạy tốt. Nếu báo lỗi ngay → iOS không theo được redirect.
+      <b>Hướng dẫn:</b><br>
+      1. Mở trang này bằng <b>Safari</b> trên iPhone/iPad.<br>
+      2. Bấm <b>Cài đặt SpeedMaint</b> → chọn <b>Cài đặt / Install</b>.<br>
+      3. Lần đầu: vào <b>Cài đặt → Cài đặt chung → VPN &amp; Quản lý thiết bị</b> để tin cậy chứng chỉ nhà phát triển.
     </div>
   </div>
 </body>
